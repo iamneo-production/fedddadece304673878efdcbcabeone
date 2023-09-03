@@ -27,5 +27,19 @@ function handleMove(element,index)
         element.value= currentPlayer;
         element.disabled=true;
         currentPlayer=currentPlayer==='X'?'O':'X';
-        const winner= checkWin()
+        const winner= checkWin();
+        if(winner==='draw'){
+            result.innerHTML='its a draw!';
+        }else if(winner){
+            result.innerHTML=`Player$ {currentPlayer}Turn`;
+        }
+
+}
+
+function resetGame(){
+    cells=['','','','','','','','',''];
+    btns.forEach(btn)=>{
+        btn.value="
+        btn.disabled=false;
+    }
 }
