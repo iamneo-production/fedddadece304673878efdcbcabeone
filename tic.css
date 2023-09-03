@@ -67,3 +67,22 @@ p{
     border-right: 1px solid gray;
     border-left: 1px solid gray;
 }
+
+#b9{
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+#but{
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid dodgerblue;
+    margin-left: auto;
+    border-radius: 8px;
+    background-color: bright white;
+    color:black;
+    font-size: 25px;
+    custor:pointer;
+}
+
+
