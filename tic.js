@@ -40,9 +40,13 @@ function resetGame(){
     cells=['','','','','','','','',''];
     btns.forEach(btn) =>{
         btn.value=""
-        btn.disabled=false;});
+        btn.disabled=false;
+    };
         currentPlayer='X';
         result.innerHTML='Player X Turn';
     }
-    document.querySelector('#reset').addEventListener('click',()=> handleMove(btn,i));
+document.querySelector('#reset').addEventListener('click',resetGame);
+btns.forEach((btn,i) => {
+    btn.addEventListener('click',() =>handleMove(btn,i));
+
 });
