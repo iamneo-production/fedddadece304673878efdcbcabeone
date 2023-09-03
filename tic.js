@@ -10,7 +10,7 @@ function checkWin(){
     {
         const[a,b,c] = condition;
         if(cells[a]&&cells[a] ===cells[b]&&cells[b]===cells[c]){
-            retutn cells[a];
+            return cells[a];
         }
     }
     if(!cells.includes('')){
@@ -19,3 +19,13 @@ function checkWin(){
     return null;
 }
 function handleMove(element,index)
+{
+    if(cells[index]||checkWin()){
+        return;
+    }
+        cells[index] =currentPlayer;
+        element.value= currentPlayer;
+        element.disabled=true;
+        currentPlayer=currentPlayer==='X'?'O':'X';
+        const winner= checkWin()
+}
