@@ -1,5 +1,5 @@
 h1{
-    color:bright white
+    color:bright white;
     margin-bottom: -5px;
 }
 p{
@@ -18,7 +18,7 @@ p{
     width:80px;
     height: 80px;
     display: flex;
-    align-item:center;
+    align-items:center;
     justify-content: center;
     font-size:24px;
     text-align: center;
@@ -82,7 +82,17 @@ p{
     background-color: bright white;
     color:black;
     font-size: 25px;
-    custor:pointer;
+    cursor:pointer;
+}
+#print {
+    color:black;
+    font-size: 25px;
+}
+#main{
+text-align:center;}
+#ins{
+    color: black;
+
 }
 
 
