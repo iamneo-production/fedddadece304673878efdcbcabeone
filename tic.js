@@ -38,8 +38,11 @@ function handleMove(element,index)
 
 function resetGame(){
     cells=['','','','','','','','',''];
-    btns.forEach(btn)=>{
-        btn.value="
-        btn.disabled=false;
+    btns.forEach(btn) =>{
+        btn.value=""
+        btn.disabled=false;});
+        currentPlayer='X';
+        result.innerHTML='Player X Turn';
     }
-}
+    document.querySelector('#reset').addEventListener('click',()=> handleMove(btn,i));
+});
