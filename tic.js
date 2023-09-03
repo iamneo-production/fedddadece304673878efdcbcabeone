@@ -25,4 +25,15 @@ function myfunc(){
 
     if((b1 == 'x' ||b1 == "X")&&(b2 == 'x'||b2 =='X')&&(b3 == 'x'||b3 =='X')){
         document.getElementById('print').innerHTML = "Player X won";
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
+
+        b1btn.style.color = "red";
+        b2btn.style.color = "red";
+        b3btn.style.color = "red";
     }
+    else if (())
